@@ -1,0 +1,47 @@
+{
+  "slot": {
+    "files": [
+      {
+        "type": "image",
+        "key": "background",
+        "url": "./assets/images/background.png"
+      },
+
+      {
+        "type": "image",
+        "key": "symbol-1",
+        "url": "./assets/images/1.png"
+      },
+      {
+        "type": "image",
+        "key": "symbol-2",
+        "url": "./assets/images/2.png"
+      },
+      {
+        "type": "image",
+        "key": "symbol-3",
+        "url": "./assets/images/3.png"
+      },
+      {
+        "type": "image",
+        "key": "symbol-4",
+        "url": "./assets/images/4.png"
+      },
+      {
+        "type": "image",
+        "key": "symbol-5",
+        "url": "./assets/images/5.png"
+      },
+      {
+        "type": "image",
+        "key": "symbol-6",
+        "url": "./assets/images/6.png"
+      },
+      {
+        "type": "image",
+        "key": "symbol-7",
+        "url": "./assets/images/7.png"
+      }
+    ]
+  }
+}

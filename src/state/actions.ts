@@ -1,0 +1,7 @@
+export enum actions {
+  SHOW_CONSOLE = "SHOW_CONSOLE",
+  HIDE_CONSOLE = "HIDE_CONSOLE",
+
+  SHOW_TOKENS = "SHOW_TOKENS",
+  HIDE_TOKENS = "HIDE_TOKENS",
+}
