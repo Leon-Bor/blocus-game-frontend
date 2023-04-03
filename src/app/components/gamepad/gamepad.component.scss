@@ -1,0 +1,93 @@
+:host {
+  --button-background-color: grey;
+  --button-border-radius: 3px;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.directionGrid {
+  display: grid;
+  grid-template-areas: ". up ." "left . right" ". down .";
+
+  .button {
+    .left {
+      background-image: url(../../../assets/icons/leftArrow.svg);
+    }
+    .right {
+      background-image: url(../../../assets/icons/rightArrow.svg);
+    }
+    .up {
+      background-image: url(../../../assets/icons/upArrow.svg);
+    }
+    .down {
+      background-image: url(../../../assets/icons/downArrow.svg);
+    }
+  }
+}
+
+.actionGrid {
+  display: grid;
+  grid-template-areas: ". up ." "left . right" ". down .";
+
+  .button {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+
+    .left {
+      background-image: url(../../../assets/icons/redo.svg);
+    }
+    .right {
+      background-image: url(../../../assets/icons/redo.svg);
+      transform: rotate(180deg);
+    }
+    .up {
+      background-image: url(../../../assets/icons/setting.svg);
+    }
+    .down {
+      background-image: url(../../../assets/icons/confirm.svg);
+    }
+  }
+}
+
+.button {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button-background-color);
+  border-radius: var(--button-border-radius);
+  padding: 5px;
+  &.left {
+    grid-area: left;
+  }
+  &.right {
+    grid-area: right;
+  }
+  &.up {
+    grid-area: up;
+  }
+  &.down {
+    grid-area: down;
+  }
+}
+
+.icon {
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
