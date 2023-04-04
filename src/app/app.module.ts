@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { GameBoardComponent } from './components/game-board/game-board.component';
 import { GamepadComponent } from './components/gamepad/gamepad.component';
 import { IndexComponent } from './views/index.component';
+import { TokenComponent } from './components/token/token.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { IndexComponent } from './views/index.component';
     GameBoardComponent,
     GamepadComponent,
     IndexComponent,
+    TokenComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

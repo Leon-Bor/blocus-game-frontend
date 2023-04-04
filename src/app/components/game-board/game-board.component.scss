@@ -3,27 +3,30 @@
 }
 
 .container {
-  position: fixed;
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   top: 0;
+  z-index: 3;
   width: 100%;
   height: 100%;
-  z-index: 1;
+}
+
+.gameArea {
+  max-height: 100vh;
+  max-width: 100vh;
 }
 
 .level {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  max-height: 100vh;
-  max-width: 100vh;
 }
 
 .cell {
-  width: calc(100vh / 16);
-  height: calc(100vh / 16);
+  width: var(--token-width);
+  height: var(--token-width);
   font-size: 6px;
   display: flex;
   align-items: center;

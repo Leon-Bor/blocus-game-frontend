@@ -1,0 +1,11 @@
+<div class="token" [ngStyle]="{ 'grid-template-columns': getGrid() }">
+  <ng-container *ngFor="let row of token.template; let y = index">
+    <div
+      class="cell"
+      *ngFor="let isBlock of row; let x = index"
+      [ngClass]="{ isBlock: isBlock === 1 }"
+    >
+      {{ y }}
+    </div>
+  </ng-container>
+</div>

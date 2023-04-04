@@ -1,13 +1,17 @@
 <div class="container">
-  <div class="level">
-    <ng-container *ngFor="let template of level.template; let y = index">
-      <div
-        class="cell"
-        [ngClass]="{ cellEven: x % 2 === 0, rowEven: y % 2 === 0 }"
-        *ngFor="let row of template; let x = index"
-      >
-        {{ x }} {{ y }}
-      </div>
-    </ng-container>
+  <div class="gameArea">
+    <div class="level">
+      <ng-container *ngFor="let template of level.template; let y = index">
+        <div
+          class="cell"
+          [ngClass]="{ cellEven: x % 2 === 0, rowEven: y % 2 === 0 }"
+          *ngFor="let row of template; let x = index"
+        >
+          {{ x }} {{ y }}
+        </div>
+      </ng-container>
+    </div>
+
+    <app-token></app-token>
   </div>
 </div>

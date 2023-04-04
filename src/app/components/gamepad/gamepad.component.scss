@@ -18,6 +18,7 @@
 .directionGrid {
   display: grid;
   grid-template-areas: ". up ." "left . right" ". down .";
+  gap: 2px;
 
   .button {
     .left {
@@ -46,7 +47,7 @@
     padding: 10px;
 
     .left {
-      background-image: url(../../../assets/icons/redo.svg);
+      background-image: url(../../../assets/icons/confirm.svg);
     }
     .right {
       background-image: url(../../../assets/icons/redo.svg);
@@ -56,7 +57,7 @@
       background-image: url(../../../assets/icons/setting.svg);
     }
     .down {
-      background-image: url(../../../assets/icons/confirm.svg);
+      background-image: url(../../../assets/icons/redo.svg);
     }
   }
 }
