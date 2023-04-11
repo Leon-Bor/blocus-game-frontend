@@ -1,18 +1,18 @@
 <div class="container">
   <div class="directionGrid">
-    <div class="button left">
+    <div class="button left" (click)="onDirection('left')">
       <div class="icon left"></div>
     </div>
 
-    <div class="button right">
+    <div class="button right" (click)="onDirection('right')">
       <div class="icon right"></div>
     </div>
 
-    <div class="button up">
+    <div class="button up" (click)="onDirection('up')">
       <div class="icon up"></div>
     </div>
 
-    <div class="button down">
+    <div class="button down" (click)="onDirection('down')">
       <div class="icon down"></div>
     </div>
   </div>
@@ -21,7 +21,7 @@
       <div class="icon left"></div>
     </div>
 
-    <div class="button right">
+    <div class="button right" (click)="onTurn('right')">
       <div class="icon right"></div>
     </div>
 
@@ -29,7 +29,7 @@
       <div class="icon up"></div>
     </div>
 
-    <div class="button down">
+    <div class="button down" (click)="onTurn('left')">
       <div class="icon down"></div>
     </div>
   </div>

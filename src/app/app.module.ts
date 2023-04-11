@@ -7,6 +7,7 @@ import { GameBoardComponent } from './components/game-board/game-board.component
 import { GamepadComponent } from './components/gamepad/gamepad.component';
 import { IndexComponent } from './views/index.component';
 import { TokenComponent } from './components/token/token.component';
+import { StateService } from './services/state.service';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { TokenComponent } from './components/token/token.component';
     TokenComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [StateService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

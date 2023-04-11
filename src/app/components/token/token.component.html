@@ -1,4 +1,4 @@
-<div class="token" [ngStyle]="{ 'grid-template-columns': getGrid() }">
+<div class="token" [ngStyle]="styles">
   <ng-container *ngFor="let row of token.template; let y = index">
     <div
       class="cell"

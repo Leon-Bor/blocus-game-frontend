@@ -8,6 +8,8 @@
   display: grid;
   align-items: center;
   justify-content: center;
+  position: relative;
+  transition: all 0.2s linear;
 }
 
 .cell {
